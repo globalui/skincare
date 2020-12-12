@@ -1,0 +1,20 @@
+.wist-btn-on-card{
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+
+.grid .card-body{ 
+    padding-bottom: 40px;
+}
+.card-ftr {
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    padding: 12px 1.25rem;
+}
+
+a.card-text{
+    color:$txtcolor;
+}
