@@ -232,9 +232,14 @@
   .navbar-nav {
     .nav-link {
       color: $body-color;
+      transition: all 0.2 ease; 
 
       @include hover-focus() {
-        color: $navbar-light-hover-color;
+        color: $body-color;
+        span{
+          padding-bottom:4px;
+          border-bottom: 2px solid $body-color;
+        }
       }
 
       &.disabled {
@@ -246,7 +251,11 @@
     .active > .nav-link,
     .nav-link.show,
     .nav-link.active {
-      color: $navbar-light-active-color;
+      color: $body-color;
+      span{
+        padding-bottom:4px;
+        border-bottom: 2px solid $body-color;
+      }
     }
   }
 

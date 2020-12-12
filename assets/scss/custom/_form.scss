@@ -1,0 +1,6 @@
+.form-control{ 
+    &.form-control-lg.small-from-text{
+        font-size:90% !important;
+        height: calc(1.5em + 1rem + 10px);
+    }
+}

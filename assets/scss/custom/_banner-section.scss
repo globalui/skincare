@@ -1,0 +1,26 @@
+.hero-section{
+    position: relative;
+    height:400px;
+
+    picture{
+        position: absolute;
+        right: 0px;
+        top:0px; 
+        text-align: right; 
+    }
+
+    @media(min-width:992px){
+        height:500px;
+        picture{
+            width:50%; 
+        }
+        
+    }
+    @media(min-width:1200px){
+        height:600px;
+        picture{
+            width:50%; 
+        }
+    }
+   
+}
