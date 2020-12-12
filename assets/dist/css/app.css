@@ -11308,6 +11308,10 @@ a.text-txtcolor:hover, a.text-txtcolor:focus {
 
 a.card-text {
   color: #323B5C;
+  font-size: calc(0.7rem + 0.3vw);
+  line-height: normal;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .small-from-text {

@@ -17,4 +17,8 @@
 
 a.card-text{
     color:$txtcolor;
+    font-size: calc(0.7rem + 0.3vw);
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 20px;
 }
