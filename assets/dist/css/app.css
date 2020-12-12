@@ -5279,6 +5279,7 @@ input[type="button"].btn-block {
   color: #323B5C;
   -webkit-transition: all 0.2 ease;
   transition: all 0.2 ease;
+  white-space: nowrap;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
@@ -11222,6 +11223,7 @@ a.text-txtcolor:hover, a.text-txtcolor:focus {
   top: 0px;
   text-align: right;
   z-index: -1;
+  width: 50%;
 }
 
 @media (min-width: 992px) {

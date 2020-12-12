@@ -37,8 +37,9 @@
     @extend %container-flex-properties;
   }
 
-  @each $breakpoint, $container-max-width in $container-max-widths {
-    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {
+  @each $breakpoint,
+  $container-max-width in $container-max-widths {
+    >.container#{breakpoint-infix($breakpoint, $container-max-widths)} {
       @extend %container-flex-properties;
     }
   }
@@ -154,13 +155,14 @@
           padding-left: 0;
         }
 
-        > .container,
-        > .container-fluid {
+        >.container,
+        >.container-fluid {
           @extend %container-navbar-expand-#{$breakpoint};
         }
 
-        @each $size, $container-max-width in $container-max-widths {
-          > .container#{breakpoint-infix($size, $container-max-widths)} {
+        @each $size,
+        $container-max-width in $container-max-widths {
+          >.container#{breakpoint-infix($size, $container-max-widths)} {
             @extend %container-navbar-expand-#{$breakpoint};
           }
         }
@@ -188,13 +190,14 @@
           flex-wrap: nowrap;
         }
 
-        > .container,
-        > .container-fluid {
+        >.container,
+        >.container-fluid {
           @extend %container-nesting-#{$breakpoint};
         }
 
-        @each $size, $container-max-width in $container-max-widths {
-          > .container#{breakpoint-infix($size, $container-max-widths)} {
+        @each $size,
+        $container-max-width in $container-max-widths {
+          >.container#{breakpoint-infix($size, $container-max-widths)} {
             @extend %container-nesting-#{$breakpoint};
           }
         }
@@ -232,12 +235,14 @@
   .navbar-nav {
     .nav-link {
       color: $body-color;
-      transition: all 0.2 ease; 
+      transition: all 0.2 ease;
+      white-space: nowrap;
 
       @include hover-focus() {
         color: $body-color;
-        span{
-          padding-bottom:4px;
+
+        span {
+          padding-bottom: 4px;
           border-bottom: 2px solid $body-color;
         }
       }
@@ -247,13 +252,14 @@
       }
     }
 
-    .show > .nav-link,
-    .active > .nav-link,
+    .show>.nav-link,
+    .active>.nav-link,
     .nav-link.show,
     .nav-link.active {
       color: $body-color;
-      span{
-        padding-bottom:4px;
+
+      span {
+        padding-bottom: 4px;
         border-bottom: 2px solid $body-color;
       }
     }
@@ -270,6 +276,7 @@
 
   .navbar-text {
     color: $navbar-light-color;
+
     a {
       color: $navbar-light-active-color;
 
@@ -303,8 +310,8 @@
       }
     }
 
-    .show > .nav-link,
-    .active > .nav-link,
+    .show>.nav-link,
+    .active>.nav-link,
     .nav-link.show,
     .nav-link.active {
       color: $navbar-dark-active-color;
@@ -322,6 +329,7 @@
 
   .navbar-text {
     color: $navbar-dark-color;
+
     a {
       color: $navbar-dark-active-color;
 
