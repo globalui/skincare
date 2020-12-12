@@ -10996,6 +10996,7 @@ a.text-txtcolor:hover, a.text-txtcolor:focus {
   right: 0px;
   top: 0px;
   text-align: right;
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
@@ -11016,8 +11017,24 @@ a.text-txtcolor:hover, a.text-txtcolor:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-section > .container:before {
+    content: "";
+    background: #00bc96;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0.9;
+  }
+  .hero-section .hero-caption .text-primary {
+    color: #fff !important;
+  }
+}
+
 .form-control.form-control-lg.small-from-text {
-  font-size: 90% !important;
+  font-size: calc(0.55rem + 0.3vw);
   height: calc(1.5em + 1rem + 10px);
 }
 /*# sourceMappingURL=app.css.map */

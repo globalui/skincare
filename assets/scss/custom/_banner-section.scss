@@ -1,26 +1,52 @@
-.hero-section{
+.hero-section {
     position: relative;
-    height:400px;
+    height: 400px;
 
-    picture{
+    picture {
         position: absolute;
         right: 0px;
-        top:0px; 
-        text-align: right; 
+        top: 0px;
+        text-align: right;
+        z-index: -1;
     }
 
-    @media(min-width:992px){
-        height:500px;
-        picture{
-            width:50%; 
+    @media(min-width:992px) {
+        height: 500px;
+
+        picture {
+            width: 50%;
         }
-        
+
     }
-    @media(min-width:1200px){
-        height:600px;
-        picture{
-            width:50%; 
+
+    @media(min-width:1200px) {
+        height: 600px;
+
+        picture {
+            width: 50%;
         }
     }
-   
+
+    @media(max-width:768px) {
+        &>.container {
+            &:before {
+                content: "";
+                background: #00bc96;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                opacity: 0.9;
+            }
+        }
+
+        .hero-caption { 
+
+            .text-primary {
+                color: #fff !important;
+            }
+        }
+    }
+
 }
