@@ -11033,8 +11033,8 @@ a.text-txtcolor:hover, a.text-txtcolor:focus {
   }
 }
 
-.form-control.form-control-lg.small-from-text {
-  font-size: calc(0.55rem + 0.3vw);
+.small-from-text {
+  font-size: calc(0.7rem + 0.3vw);
   height: calc(1.5em + 1rem + 10px);
 }
 /*# sourceMappingURL=app.css.map */
