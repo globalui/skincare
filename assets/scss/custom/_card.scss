@@ -22,3 +22,10 @@ a.card-text{
     display: inline-block;
     margin-bottom: 20px;
 }
+
+.img-with-shadow{
+    img{ 
+    box-shadow: -20px 30px 0px $txtcolor;
+    border-radius:4px;
+    }
+}

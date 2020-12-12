@@ -11314,6 +11314,12 @@ a.card-text {
   margin-bottom: 20px;
 }
 
+.img-with-shadow img {
+  -webkit-box-shadow: -20px 30px 0px #323B5C;
+          box-shadow: -20px 30px 0px #323B5C;
+  border-radius: 4px;
+}
+
 .small-from-text {
   font-size: calc(0.7rem + 0.3vw);
   height: calc(1.5em + 1rem + 10px);
